@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-      	<header class="header">
+    <header class="header">
     	<div class="container">
         <div class="header__box">
             <div class="header__burger active">
@@ -21,9 +21,6 @@
     		</div>
                 <a href="" class="header__logo">
                     Logo
-                    <img src="" 
-                    alt="">
-                    
                 </a>
                 <div class="header__nav">
                     <ul>
@@ -48,16 +45,17 @@
     		<a class="header__contact_icon" href="tel:+7(800)302-06-20">
      		 	<img src="./img/icon/phone.svg" alt="phone number">
    			</a>
-    
     	</div>
+        </div>  
   	</header>
 
     <section class="main">
         <div class="container">
             <div class="main__wrap">
             <div class="main__text">
-                <div class="main__eclipse eclipse"></div>
-                <h2 class="main__title title"><span>T</span>he company is a manufacturer of floor coverings.</h2>
+                <div class="main__title title">
+                    <div class="main__eclipse eclipse"></div>
+                    <span>T</span>he company is a manufacturer of floor coverings.</div>
                 <p class="main__subtitle subtitle">The guarantee for structural
                 <br> integrity is 30 years.</p>
                 <a href="#" class="main__btn btn">Catalog</a>
@@ -98,10 +96,10 @@
 
     <section class="catalog">
         <div class="container">
-            <h2 class="catalog__title title">
-                <div class="catalog__eclipse eclipse"></div>  
+            <div class="catalog__title title">  
+                <div class="catalog__eclipse eclipse"></div>
                 <span>P</span>roduct catalog
-            </h2>
+            </div>
             <p class="catalog__subtitle subtitle">We create wood products that serve as a source of inspiration for those who touch them.</p>
             <div class="catalog__btn-wrap">
                 <div data-f="Style" class="catalog__btn">Style collection</div>
@@ -111,49 +109,85 @@
                 <div data-f="Natural" class="catalog__btn">Natural collection</div>
             </div>
             <select class="catalog__min-width">
-            <div data-f="Style" >
+            <!-- <div data-f="Style" >
                 Style collection
             </div>
                 <div data-f="Grand" >Grand collection</div>
                 <div data-f="Prime" >Prime collection</div>
                 <div data-f="Forte" >Forte collection</div>
-                <div data-f="Natural" >Natural collection</div>
-                    <option value="Style"> <div data-f= >Style collection</div></option>
-                    <option value="Grand"><div data-f= >Grand collection</div></option>
-                    <option value="Prime">Prime collection</option>
-                    <option   value="Forte">Forte collection</option>
-                    <option  value="Natural" >Natural collection</option>
+                <div data-f="Natural" >Natural collection</div> -->
+                    <option value="Style" label="Style collection"></option>
+                    <option value="Grand" label="Grand collection"></option>
+                    <option value="Prime" label="Prime collection"></option>
+                    <option value="Forte" label="Forte collection"></option>
+                    <option value="Natural" label="Natural collection"></option>
             </select>
 
             <div class="catalog__items">
                     <div class="catalog__item Style">     
-                        <img src="" alt="">
-                        <p class="catalog__description"></p>
+                        <img src="./img/imgProducntion/akvitania.png" alt="akvitania">
+                        <p class="catalog__description">Product</p>
                     </div> 
               
                 
                     <div class="catalog__item Grand">
-                        <img src="" alt="">
-                        <p class="catalog__description"></p>     
+                        <img src="./img/imgProducntion/angu.png" alt="angu">
+                        <p class="catalog__description">Product</p>     
                     </div> 
               
                 
                     <div class="catalog__item Prime">
-                        <img src="" alt="">
-                        <p class="catalog__description"></p>     
+                        <img src="./img/imgProducntion/bordo.png" alt="bordo">
+                        <p class="catalog__description">Product</p>     
                     </div> 
               
                 
                     <div class="catalog__item Forte">
-                        <img src="" alt="">
-                        <p class="catalog__description"></p>     
-             
+                        <img src="./img/imgProducntion/burgundia.png" alt="burgundia">
+                        <p class="catalog__description">Product</p>     
+                    </div>
+
                     <div class="catalog__item Natural">
-                        <img src="" alt="">
-                        <p class="catalog__description"></p>     
+                        <img src="./img/imgProducntion/Burgundy.jpg" alt="Burgundy">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Style">
+                        <img src="./img/imgProducntion/digon.png" alt="digon">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Prime">
+                        <img src="./img/imgProducntion/korsika.png" alt="korsika">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Style">
+                        <img src="./img/imgProducntion/lion.png" alt="lion">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Forte">
+                        <img src="./img/imgProducntion/mulen.png" alt="mulen">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Forte">
+                        <img src="./img/imgProducntion/nica.png" alt="nica">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Grand">
+                        <img src="./img/imgProducntion/provance.png" alt="provance">
+                        <p class="catalog__description">Product</p>     
+                    </div> 
+
+                    <div class="catalog__item Grand">
+                        <img src="./img/imgProducntion/shamil.png" alt="shamil">
+                        <p class="catalog__description">Product</p>     
                     </div> 
             
-            </div>
+            
             <div class="catalog__link">
             <a href="#" class="catalog__more">More</a>
             </div>      
@@ -162,9 +196,9 @@
 
     <section class="assortment">
         <div class="container">
-            <h2 class="assortment__title title">
+            <div class="assortment__title title">
                 <div class="assortment__eclipse eclipse"></div>  
-            <span>A</span>ssortment</h2>
+            <span>A</span>ssortment</div>
             <div class="assortment__items">
                 <div class="assortment__items-top">
                     <div class="assortment__item">
@@ -217,9 +251,9 @@
 
     <section class="production">
         <div class="container">
-        <h2 class="production__title title">
+        <div class="production__title title">
             <div class="production__eclipse eclipse"></div>    
-            <span>P</span>roduction</h2>
+            <span>P</span>roduction</div>
         </div>
         <div class="production__wrap">
             <div class="production__left">
