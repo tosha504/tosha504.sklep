@@ -28,7 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   const $filter = document.querySelectorAll(".catalog__item");
-  const $filter1 = document.querySelectorAll(".catalog__page-item");
 
   document
     .querySelector(".catalog__btn-wrap")
@@ -46,6 +45,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
       let filterClass = event.target.dataset["f"];
       $filter.forEach(function(elem) {
+        elem.classList.remove("hide");
+        if (!elem.classList.contains(filterClass)) {
+          elem.classList.add("hide");
+        }
+      });
+    });
+
+  document
+    .querySelector(".catalog__min-width")
+    .addEventListener("click", function(event) {
+      let filterClass = event.target.value;
+      console.log(filterClass);
+      $filter.forEach(function(elem) {
+        console.log(elem);
         elem.classList.remove("hide");
         if (!elem.classList.contains(filterClass)) {
           elem.classList.add("hide");
