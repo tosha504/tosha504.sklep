@@ -36,7 +36,6 @@ window.addEventListener("DOMContentLoaded", () => {
       if (event.target.tagName !== "LI") return false;
 
       document.querySelectorAll(".catalog__btn").forEach(function(e) {
-        console.log(e.classList.contains("active"));
         e.classList.remove("active");
         if (e.classList.contains("active")) {
           event.target.classList.remove("active");
