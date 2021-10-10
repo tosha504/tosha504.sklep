@@ -52,15 +52,20 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+  //   document.querySelectorAll(".catalog__min-width").forEach(function(e) {
+  //     console.log(e);
+  //   });
+
   document
     .querySelector(".catalog__min-width")
     .addEventListener("click", function(event) {
       let filterClass = event.target.value;
-      console.log(filterClass);
+
       $filter.forEach(function(elem) {
-        console.log(elem);
         elem.classList.remove("hide");
-        if (!elem.classList.contains(filterClass)) {
+        if (filterClass == "filter") {
+          elem.classList.remove("hide");
+        } else if (!elem.classList.contains(filterClass)) {
           elem.classList.add("hide");
         }
       });
