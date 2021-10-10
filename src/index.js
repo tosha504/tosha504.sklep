@@ -34,13 +34,16 @@ window.addEventListener("DOMContentLoaded", () => {
     .querySelector(".catalog__btn-wrap")
     .addEventListener("click", function(event) {
       if (event.target.tagName !== "LI") return false;
-      console.log(event.target);
 
-      if (!event.target.classList.contains("active")) {
-        event.target.classList.remove("active");
-      } else {
-        event.target.classList.add("active");
-      }
+      document.querySelectorAll(".catalog__btn").forEach(function(e) {
+        console.log(e.classList.contains("active"));
+        e.classList.remove("active");
+        if (e.classList.contains("active")) {
+          event.target.classList.remove("active");
+        } else {
+          event.target.classList.add("active");
+        }
+      });
 
       let filterClass = event.target.dataset["f"];
       $filter.forEach(function(elem) {
